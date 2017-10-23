@@ -22,11 +22,12 @@ const instructions = Platform.select({
 
 export default class App extends Component<{}> {
   render() {
+    const { container, welcome } = styles;
     return (
-      <View style={styles.container}>
+      <View style={container}>
         <Header />
-        <Text style={styles.welcome}>
-          New title.
+        <Text style={welcome}>
+          New title
         </Text>
         <Text style={styles.instructions}>
           {instructions}
@@ -37,12 +38,12 @@ export default class App extends Component<{}> {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
+  // container: {
+  //   flex: 1,
+  //   justifyContent: 'center',
+  //   alignItems: 'center',
+  //   backgroundColor: '#F5FCFF',
+  // },
   welcome: {
     fontSize: 20,
     textAlign: 'center',
