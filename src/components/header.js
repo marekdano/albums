@@ -1,9 +1,9 @@
 import React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
 
-const Header = () => (
+const Header = ({ headerText }) => (
 	<View style={styles.header}>
-		<Text>Album</Text>
+		<Text>{headerText}</Text>
 	</View>
 );
 

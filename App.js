@@ -25,7 +25,7 @@ export default class App extends Component<{}> {
     const { container, welcome } = styles;
     return (
       <View style={container}>
-        <Header />
+        <Header headerText={'Album'} />
         <Text style={welcome}>
           New title
         </Text>
