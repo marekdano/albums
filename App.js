@@ -25,7 +25,7 @@ export default class App extends Component<{}> {
   render() {
     const { container, welcome } = styles;
     return (
-      <View style={container}>
+      <View style={{ flex: 1 }}>
         <Header headerText={'Album'} />
         <AlbumList />
         <Text style={welcome}>
