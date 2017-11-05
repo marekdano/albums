@@ -23,7 +23,7 @@ const instructions = Platform.select({
 
 export default class App extends Component<{}> {
   render() {
-    const { container, welcome } = styles;
+    const { welcome } = styles;
     return (
       <View style={{ flex: 1 }}>
         <Header headerText={'Album'} />
