@@ -35,7 +35,7 @@ const AlbumDetail = ({ album }) => {
 			</CardSection>
 
 			<CardSection>
-				<Button />	
+				<Button onPressProp={() => console.log(title)} />	
 			</CardSection>
 		</Card>
 	);
