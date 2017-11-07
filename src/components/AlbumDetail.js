@@ -35,7 +35,9 @@ const AlbumDetail = ({ album }) => {
 			</CardSection>
 
 			<CardSection>
-				<Button onPressProp={() => Linking.openURL(url)} />	
+				<Button onPressProp={() => Linking.openURL(url)}> 
+					Buy now
+				</Button>	
 			</CardSection>
 		</Card>
 	);
@@ -68,11 +70,11 @@ const styles = {
 
 AlbumDetail.propTypes = {
 	album: PropTypes.shape({
-		title: PropTypes.string,
-		artist: PropTypes.string,
-		url: PropTypes.string,
-		image: PropTypes.string,
-		thumbnail_image: PropTypes.string
+		title: PropTypes.string.isRequired,
+		artist: PropTypes.string.isRequired,
+		url: PropTypes.string.isRequired,
+		image: PropTypes.string.isRequired,
+		thumbnail_image: PropTypes.string.isRequired
 	})
 };
 
